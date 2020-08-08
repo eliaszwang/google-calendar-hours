@@ -25,7 +25,7 @@ define([
 
   var Output = Backbone.View.extend({
     template: _.template(outputTmpl),
-    detailsShown: false,
+    detailsShown: true,
     initialize: function() {
       this.model.bind("viewUpdate", this.updateView, this);
     },
